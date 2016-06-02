@@ -2,7 +2,7 @@ var mongodb = require('./mongodb');
 var Schema = mongodb.mongoose.Schema;
 var ArticleSchema = new Schema({
   content: String,
-  titiel: String,
+  title: String,
   inserDate: Date
 });
 

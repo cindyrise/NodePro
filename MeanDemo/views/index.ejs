@@ -1,40 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>article</title>
-    <link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../public/stylesheets/style.css"> 
-    <script src="../public/lib/jquery/dist/jquery.min.js"></script>
-    <script src="../public/lib/angular/angular.min.js"></script>
-    <script src="../public/lib/angular-ui/router/release/angular-ui-router.js"></script>
-    <scirpt src="../public/articles/article.js"></scirpt>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%=title%></title>
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css"> 
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/angular/angular.min.js"></script>
+  <script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/articles/article.js"></script>
 </head>
 
 <body ng-app="articleapp" ng-controller='ArticleCtrl'>
-  
-  <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+
+<!--   <form ng-submit="postArticle()">
+    <div class="form-group">
+      <label for="content">Email address</label>
+      <input type="text" class="form-control" id="content" placeholder="内容" ng-model="content">
+    </div>
+    <div class="form-group">
+      <label for="topic">Password</label>
+      <input type="text" class="form-control" id="topic" placeholder="标题" ng-model="topic">
+    </div>
+    <button type="submit" ng-click="" class="btn btn-default">Submit</button>
+  </form>
+  <br/>
+  <input type="text" class="form-control" id="topic" placeholder="标题" ng-model="del_id">
+
+    <button class="col-xs-12 btn btn-primary" id="btn_search" ng-click='deleteArticle()'>删除</button>
+  <br/>
+   <input type="text" class="form-control" id="topic" placeholder="标题" ng-model="get_id">
+  <button class="col-xs-12 btn btn-primary" id="btn_search" ng-click='getArticle()'>获取数据</button> -->
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+    <div ui-view></div>
+    <!-- We'll also add some navigation: -->
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
 </body>
 </html>
